@@ -5,18 +5,20 @@ El contexto consistiría en el uso de un vendedor de propiedades o acesor inmobi
 ALGORITMO>
 
 ENTRADAS
-Precio de venta de la propiedad
-Porcentaje de comisión
-Porcentaje de inversión en publicidad seleccionado
+precio = Precio de venta de la propiedad
+pcom = Porcentaje de comisión
+ppub = Porcentaje de inversión en publicidad seleccionado
 
 PROCESO
-Precio propiedad * Porcentaje comisión
-Precio propiedad * Porcentaje publicidad
-Total comisión - Total publicidad
-(Total publicidad / Total comisión )*100
+com = Precio propiedad * Porcentaje comisión
+pub = Precio propiedad * Porcentaje publicidad
+dif = Total comisión - Total publicidad
+rel = (Total publicidad / Total comisión )*100
 
 SALIDAS
-Total de comisión
-Total de publicidad
-Ganancia neta (comisión - publicidad)
-Porcentaje de inversión respecto a la ganancia
+print(
+com = Total de comisión
+pub = Total de publicidad
+dif = Ganancia neta (comisión - publicidad)
+rel = Porcentaje de inversión respecto a la ganancia (Total publicidad / Total comisión )*100
+)
