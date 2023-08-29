@@ -2,7 +2,7 @@
 
 El contexto consistiría en el uso de un vendedor de propiedades o acesor inmobilairio, que basado en el valor de venta de una propiedad pueda calcular la inversión apropiada para publicitar la propiedad, así como el valor de su comisión de lograr la venta y compararlos. Este ejemplo me es interesante ya que recientemente comencé a trabajar con ventas del sector inmobiliario y un compañero de mayor edad con experiencia me explicó de la relación de valores que existe a la hora de invertir en publicidad.
 
-ALGORITMO>
+PSEUDO CÓDIGO>
 
 ENTRADAS
 precio = Precio de venta de la propiedad
