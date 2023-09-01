@@ -5,20 +5,33 @@ El contexto consistiría en el uso de un vendedor de propiedades o acesor inmobi
 PSEUDO CÓDIGO>
 
 ENTRADAS
+
 precio = Precio de venta de la propiedad
+
 pcom = Porcentaje de comisión
+
 ppub = Porcentaje de inversión en publicidad seleccionado
 
 PROCESO
+
 com = Precio propiedad * Porcentaje comisión
+
 pub = Precio propiedad * Porcentaje publicidad
+
 dif = Total comisión - Total publicidad
+
 rel = (Total publicidad / Total comisión )*100
 
 SALIDAS
+
 print(
+
 com = Total de comisión
+
 pub = Total de publicidad
+
 dif = Ganancia neta (comisión - publicidad)
+
 rel = Porcentaje de inversión respecto a la ganancia (Total publicidad / Total comisión )*100
+
 )
