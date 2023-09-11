@@ -32,4 +32,4 @@ while True:
         evaluarpub(precio, pcom, ppub, com, pub, dif, rel)
         break
     else:
-        print("Respuesta ivalida, intente de nuevo \n")
+        print("Respuesta invalida, intente de nuevo \n")
