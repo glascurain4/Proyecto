@@ -1,13 +1,35 @@
-precio = float(input("Precio de la propiedad a vender (en millones):"))*1000000
-pcom = float(input("Inserte el porcentaje de comisión (directa o compartida) en %:"))
-ppub = 0.0025
+#Variables
+com = 0
+pub = 0
+dif = 0
+rel= 0
 
-com = precio*(pcom/100)
-pub = precio*ppub    
-dif = com - pub
-rel = (pub/com)*100
+#Funciones
+def evaluarcom(precio, pcom, com):
+    com = precio*(pcom/100) 
+    return print("Los resultados serían los siguientes \n Valor de la propiedad:", precio, "\n Comisión:",com)
+def evaluarpub(precio, pcom, ppub, com, pub, dif, rel):
+    com = precio*(pcom/100)
+    pub = precio*ppub    
+    dif = com - pub
+    rel = (pub/com)*100
+    return print("Los resultados serían los siguientes \n Valor de la propiedad:", precio, "\n Comisión:",com,"\n Inversión en publicidad:", pub, "\n Comisón neta:", dif, "\n Porcentaje de publicidad respecto a la comisión:", rel,"%")
 
-def salida(precio, com, pub, rel):
-    print("Los valores serían los siguientes: \n Valor propiedad:", precio, "\n Comisión:", com, "\n Pago por publicidad:", pub, "\n Comisión neta:", dif, "\n Porcentaje por publicidad respecto a la comisión:", rel,"%")
+#Logaritmo principal
+while True:
+    accion = str(input("¿Qué desea calcular? \n1. Comisión \n2. Comisión y Publicidad \n"))
 
-salida(precio, com, pub, rel)
+#Estructuras de decisión
+    if accion == "1":
+        precio = float(input("Precio de la propiedad a vender (en millones): \n"))*1000000
+        pcom = float(input("Inserte el porcentaje de comisión (directa o compartida) en %: \n"))
+        evaluarcom(precio, pcom, com)
+        break
+    elif accion == "2":
+        precio = float(input("Precio de la propiedad a vender (en millones): \n"))*1000000
+        pcom = float(input("Inserte el porcentaje de comisión (directa o compartida) en %: \n"))
+        ppub = 0.0025
+        evaluarpub(precio, pcom, ppub, com, pub, dif, rel)
+        break
+    else:
+        print("Respuesta ivalida, intente de nuevo \n")
