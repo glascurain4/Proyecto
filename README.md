@@ -35,3 +35,16 @@ dif = Ganancia neta (comisión - publicidad)
 rel = Porcentaje de inversión respecto a la ganancia (Total publicidad / Total comisión )*100
 
 )
+
+
+
+Avances a reevaluar:
+
+
+- Planeta uba situación problema
+
+- Pseudocódigo en el .README
+
+- Aplica estructuras condicionales
+
+- Uso de listas y matrices
