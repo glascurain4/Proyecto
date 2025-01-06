@@ -1,50 +1,40 @@
-# Proyecto
+# Calculadora de Publicidad y Comisiones Inmobiliarias
 
-El contexto consistiría en el uso de un vendedor de propiedades o acesor inmobilairio, que basado en el valor de venta de una propiedad pueda calcular la inversión apropiada para publicitar la propiedad, así como el valor de su comisión de lograr la venta y compararlos. Este ejemplo me es interesante ya que recientemente comencé a trabajar con ventas del sector inmobiliario y un compañero de mayor edad con experiencia me explicó de la relación de valores que existe a la hora de invertir en publicidad.
+Este proyecto se centra en el desarrollo de una herramienta para calcular y comparar la inversión en publicidad con las ganancias generadas por comisiones en el sector inmobiliario. Surge de la necesidad práctica de tomar decisiones estratégicas sobre la inversión en publicidad para propiedades, optimizando el retorno de inversión.
 
-PSEUDO CÓDIGO>
+## Funcionalidades Principales
 
-ENTRADAS
+1. **Cálculo de Comisiones**
+   - Determina el total de ganancias por comisiones basado en un porcentaje especificado y el precio de venta de la propiedad.
 
-precio = Precio de venta de la propiedad
+2. **Cálculo de Inversión en Publicidad**
+   - Estima el monto a invertir en publicidad como un porcentaje del precio de venta.
 
-pcom = Porcentaje de comisión
+3. **Análisis Comparativo**
+   - Calcula la ganancia neta restando la inversión en publicidad de las comisiones.
+   - Determina la relación porcentual entre la inversión en publicidad y las ganancias por comisiones.
 
-ppub = Porcentaje de inversión en publicidad seleccionado
+4. **Salidas Consolidadas**
+   - Total de comisión esperada.
+   - Total invertido en publicidad.
+   - Ganancia neta.
+   - Relación porcentual de inversión respecto a la comisión.
 
-PROCESO
+## Estructura del Proyecto
 
-com = Precio propiedad * Porcentaje comisión
+- `Proyecto.py`: Contiene la implementación del programa en Python basada en el pseudocódigo.
+- `README.md`: Este archivo, que describe el propósito y las funcionalidades del proyecto.
+- `Proyecto Demo.md`: Posiblemente una versión inicial o alternativa de la documentación.
 
-pub = Precio propiedad * Porcentaje publicidad
+## Pseudocódigo Implementado
 
-dif = Total comisión - Total publicidad
+### Entradas
+- `precio`: Precio de venta de la propiedad.
+- `pcom`: Porcentaje de comisión.
+- `ppub`: Porcentaje de inversión en publicidad seleccionado.
 
-rel = (Total publicidad / Total comisión )*100
+### Proceso
+1. Calcular el total de la comisión:
+   ```python
+   com = precio * pcom
 
-SALIDAS
-
-print(
-
-com = Total de comisión
-
-pub = Total de publicidad
-
-dif = Ganancia neta (comisión - publicidad)
-
-rel = Porcentaje de inversión respecto a la ganancia (Total publicidad / Total comisión )*100
-
-)
-
-
-
-Avances a reevaluar:
-
-
-- Planeta uba situación problema
-
-- Pseudocódigo en el .README
-
-- Aplica estructuras condicionales
-
-- Uso de listas y matrices
